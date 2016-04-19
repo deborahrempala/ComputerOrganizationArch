@@ -1,0 +1,14 @@
+Twig Rules! Twigman was here.
+The corruption presented here is a buffer overflow exploit called Stack Smashing (Brooks). The first way to prevent such an attack is to do bound checking.
+This is done by making sure only valid input is entered and ran throughout the program. The advantages of this is it only allows the user
+ to enter what the program needs and what the program can run on. You would use this as the user is entering and submitting data. The disadvantage
+ is that if you have a lot of input then you will have to check all of the input that is entered. The second way to prevent this attack is to add
+ a canary to the code (Mueller). A canary is used to detect a stack overflow buffer before the code can be executed (Mueller). You would use this at the 
+ start of the program. The advantage of using a canary is that it forces the attacker to gain control of the instructioal pointer by non- tradtional means (Mueller).
+ The disadvantage is that canaries cannot protect any other data or any of the pointer(Mueller). 
+ Referecnes: 
+ Brooks, R. R. Introduction to Computer and Network Security: Navigating Shades of Gray. Boca Raton: CRC, Taylor & Francis Group, 2014. Print.
+ 
+ Mueller, Oliver. "Anatomy of a Stack Smashing Attack and How GCC Prevents It." Dr. Dobb's. Dr.Dobbs, 19 June 2012. Web. 02 Nov. 2015.
+ 
+ 
